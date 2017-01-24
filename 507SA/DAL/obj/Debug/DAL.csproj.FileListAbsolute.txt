@@ -1,0 +1,9 @@
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\bin\Debug\DAL.dll.config
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\bin\Debug\DAL.dll
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\bin\Debug\DAL.pdb
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\bin\Debug\EntityFramework.dll
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\bin\Debug\EntityFramework.xml
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\obj\Debug\DAL.dll
+C:\Users\olyaa\documents\visual studio 2015\Projects\507SA\DAL\obj\Debug\DAL.pdb
