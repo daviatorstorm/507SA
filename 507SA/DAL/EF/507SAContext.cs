@@ -5,7 +5,10 @@ namespace DAL.EF
 {
 	public class _507SAContext : DbContext
 	{
-		public _507SAContext() : base("_507SAContext") { }
+		public _507SAContext() : base("_507SAContext")
+		{
+			
+		}
 
 		public virtual DbSet<User> User { get; set; }
 		public virtual DbSet<Image> Image { get; set; }
