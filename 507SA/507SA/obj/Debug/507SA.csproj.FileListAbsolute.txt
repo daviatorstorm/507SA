@@ -72,6 +72,7 @@ C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\507SA.dll.config
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\507SA.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\507SA.pdb
+C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Antlr3.Runtime.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\DAL.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\EntityFramework.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\EntityFramework.SqlServer.dll
@@ -84,13 +85,17 @@ C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.ApplicationInsights.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Newtonsoft.Json.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Helpers.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Mvc.dll
+C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Optimization.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Razor.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Webpages.Deployment.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Webpages.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Webpages.Razor.dll
+C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\WebGrease.dll
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\DAL.pdb
+C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Antlr3.Runtime.pdb
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\EntityFramework.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\EntityFramework.SqlServer.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.AI.DependencyCollector.xml
@@ -99,6 +104,8 @@ C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.AI.Web.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.ApplicationInsights.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\Newtonsoft.Json.xml
+C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Optimization.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Razor.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Webpages.xml
 C:\Users\olyaa\Desktop\507SA\507SA\507SA\bin\System.Web.Webpages.Deployment.xml

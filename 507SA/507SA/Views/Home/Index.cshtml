@@ -5,20 +5,27 @@
 
 <div>
     <h3>Учасники</h3>
-    <table>
-        <tr>
-            <td><p>Фамілія</p></td>
-            <td><p>Ім'я</p></td>
-            <td><p>Телефон</p></td>
-            <td></td>
-        </tr>
-        @foreach (var b in ViewBag.Users)
-        {
+    <table class="table">
+        <thead>
             <tr>
-                <td><p>@b.LastName</p></td>
-                <td><p>@b.FirstName</p></td>
-                <td><p>@b.Phone</p></td>
-            </tr>}
+                <th><p>Фамілія</p></th>
+                <th><p>Ім'я</p></th>
+                <th><p>Телефон</p></th>
+                <th><p>Інформація</p></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in ViewBag.Users)
+            {
+                <tr>
+                    <td>@b.LastName</td>
+                    <td>@b.FirstName</td>
+                    <td>@b.Phone</td>
+                    <td>@b.Info</td>
+                </tr>
+            }
+        </tbody>
+
     </table>
 </div>
 
