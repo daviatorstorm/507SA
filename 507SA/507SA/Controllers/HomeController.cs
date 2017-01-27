@@ -14,9 +14,19 @@ namespace _507SA.Controllers
 		// GET: Home
 		public ActionResult Index()
         {
+			return View();
+        }
+		public ActionResult About()
+		{
 			IEnumerable<User> users = db.User;
 			ViewBag.Users = users;
 			return View();
-        }
-    }
+		}
+		public ActionResult Subject()
+		{
+			IEnumerable<Subject> subjects = db.Subject;
+			ViewBag.Subjects= subjects;
+			return View();
+		}
+	}
 }

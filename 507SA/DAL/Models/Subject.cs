@@ -11,8 +11,7 @@ namespace DAL.Models
 			File = new HashSet<File>();
 		}
 		public string Name { get; set; }
-		public bool IsExam { get; set; }
-		public int SubjectId { get; set; }
+		public bool ?IsExam { get; set; }
 		public virtual ICollection<File> File { get; set; }
 	}
 }

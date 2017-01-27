@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Subject";
+}
+
+<div class="=row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><p>Предмет</p></th>
+                    <th><p>Екзамен?</p></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var b in ViewBag.Subjects)
+                {
+                    <tr>
+                        <td>@b.Name</td>
+                        <td>@Html.CheckBox("IsExam", (bool)b.IsExam)</td>
+                    </tr>}
+            </tbody>
+
+        </table>
+    </div>
+</div>
+

@@ -9,7 +9,7 @@ namespace DAL.EF
 		{
 			ToTable("Comment", "507SA").HasKey(t => t.Id);
 			Property(t => t.UserId);
-			Property(t => t.NoveltyId);
+			Property(t => t.NoweltyId);
 			Property(t => t.Text).HasMaxLength(300);
 		}
 	}

@@ -3,29 +3,5 @@
     ViewBag.Title = "Index";
 }
 
-<div>
-    <h3>Учасники</h3>
-    <table class="table">
-        <thead>
-            <tr>
-                <th><p>Фамілія</p></th>
-                <th><p>Ім'я</p></th>
-                <th><p>Телефон</p></th>
-                <th><p>Інформація</p></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var b in ViewBag.Users)
-            {
-                <tr>
-                    <td>@b.LastName</td>
-                    <td>@b.FirstName</td>
-                    <td>@b.Phone</td>
-                    <td>@b.Info</td>
-                </tr>
-            }
-        </tbody>
-
-    </table>
-</div>
+<h1>Nice to meet you!</h1>
 
