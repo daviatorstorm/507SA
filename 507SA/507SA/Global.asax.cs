@@ -13,6 +13,7 @@ namespace _507SA
     {
         protected void Application_Start()
         {
+			Bootstrapper.Initialize();
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 			AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -16,4 +16,3 @@ C:\Users\olyaa\Desktop\507SA\507SA\DAL\bin\Debug\EntityFramework.xml
 C:\Users\olyaa\Desktop\507SA\507SA\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\olyaa\Desktop\507SA\507SA\DAL\obj\Debug\DAL.dll
 C:\Users\olyaa\Desktop\507SA\507SA\DAL\obj\Debug\DAL.pdb
-C:\Users\olyaa\Desktop\507SA\507SA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

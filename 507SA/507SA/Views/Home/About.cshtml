@@ -1,4 +1,4 @@
-﻿
+﻿@model _507SA.ModelsVM.UsersListsVM
 @{
     ViewBag.Title = "About";
 }
@@ -15,13 +15,14 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var b in ViewBag.Users)
-                {
+               @for (int i = 0; i < Model.AllUsers.Count(); i++)
+               {
                     <tr>
-                        <td>@b.LastName</td>
-                        <td>@b.FirstName</td>
-                        <td>@b.Phone</td>
-                        <td>@b.Info</td>
+                          @Html.HiddenFor(m=>m.AllUsers[i].Id)
+                        <td>@Html.DisplayFor(m => m.AllUsers[i].LastName )</td>
+                        <td>@Html.DisplayFor(m => m.AllUsers[i].FirstName)</td>
+                        <td>@Html.DisplayFor(m => m.AllUsers[i].Phone)</td>
+                        <td>@Html.DisplayFor(m => m.AllUsers[i].Info)</td>
                     </tr>}
             </tbody>
 
