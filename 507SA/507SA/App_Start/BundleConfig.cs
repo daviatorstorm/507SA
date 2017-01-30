@@ -20,6 +20,9 @@ namespace _507SA.App_Start
 
 			bundles.Add(new StyleBundle("~/css/layout").Include(
 					  "~/Content/main.css"));
+
+			bundles.Add(new StyleBundle("~/css/login").Include(
+					  "~/Content/login.css"));
 		}
 	}
 }

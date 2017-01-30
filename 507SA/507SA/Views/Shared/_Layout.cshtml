@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav nav-justified ">
                         <li>
-                            @Html.ActionLink("Про групу", "About", "Home", null, new { @title = "About " })
+                            @Html.ActionLink("Група", "About", "Home", null, new { @title = "About " })
                         </li>
                         <li>
                             @Html.ActionLink("Предмети", "Subject", "Home", null, new { @title = "Subject " })
@@ -37,6 +37,12 @@
                         <li>
                             <a href="#">Розклад</a>
                         </li>
+                        <li>
+                              <a href="#" title="Change Profile"><span class="glyphicon glyphicon-user"></span></a>
+                          </li>
+                           <li>
+                               <a href="#" title="Log Out"><span class="glyphicon glyphicon-log-out"></span></a>
+                           </li>
                     </ul>
                 </div>
             </nav>
