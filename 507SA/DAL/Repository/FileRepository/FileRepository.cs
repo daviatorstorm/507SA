@@ -5,7 +5,7 @@ using DAL.UnitOfWork;
 
 namespace DAL.Repository.FileRepository
 {
-	class FileRepository:Repository<File>, IFileRepository
+	public class FileRepository:Repository<File>, IFileRepository
 	{
 		public FileRepository(IUnitOfWork context) : base(context)
 		{

@@ -1,0 +1,33 @@
+﻿@model _507SA.ModelsVM.NoweltyVM
+@{
+    ViewBag.Title = "NewsDetail";
+}
+
+        <div class="media jumbotron">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object thumbnail" src="~/Content/Images/logo.png" height="60px" alt="">
+                </a>
+            </div>
+            <div class="media-body">
+                <h2 class="media-heading">@Model.Description</h2>
+                <h3>@Model.Text</h3>
+                @Model.Date
+                    <hr>
+                    @foreach (var Com in Model.Comment)
+                    {
+                        <div class="media comment">
+                            <div class="media-body">
+                                <h5 class="media-heading">@Com.User.LastName @Com.User.FirstName</h5>
+                                <hr>
+                    <p>@Com.Text</p>
+                </div>
+            </div>  }
+                <div class="commenttext">
+                    <textarea rows="3" class="form-control" placeholder="Коментар"></textarea>
+                    <button class="btn btn-default">Відправити</button>
+                </div>
+                </div>
+
+          </div>
+

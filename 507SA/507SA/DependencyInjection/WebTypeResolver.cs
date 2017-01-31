@@ -1,5 +1,9 @@
 ﻿using DAL.EF;
+using DAL.Repository.BaseRepository;
+using DAL.Repository.CommentRepositoty;
+using DAL.Repository.FileRepository;
 using DAL.Repository.ImageRepository;
+using DAL.Repository.NoweltyRepositoty;
 using DAL.Repository.SubjectRepository;
 using DAL.Repository.UserRepository;
 using DAL.UnitOfWork;
@@ -19,6 +23,11 @@ namespace _507SA.DependencyInjection
 			container.RegisterType<IUserRepository, UserRepository>(new HierarchicalLifetimeManager());
 			container.RegisterType<ISubjectRepository, SubjectRepository>(new HierarchicalLifetimeManager());
 			container.RegisterType<IImageRepository, ImageRepository>(new HierarchicalLifetimeManager());
+			container.RegisterType<ICommentRepository, CommentRepository>(new HierarchicalLifetimeManager());
+			container.RegisterType<INoweltyRepository, NoweltyRepository>(new HierarchicalLifetimeManager());
+			container.RegisterType<IFileRepository, FileRepository>(new HierarchicalLifetimeManager());
+
+
 			DependencyResolver.SetResolver(new UnityDependencyResolver(container));
 		}
 	}

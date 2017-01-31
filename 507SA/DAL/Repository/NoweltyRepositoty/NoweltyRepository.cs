@@ -4,7 +4,7 @@ using DAL.UnitOfWork;
 
 namespace DAL.Repository.NoweltyRepositoty
 {
-	class NoweltyRepository : Repository<Nowelty>, INoweltyRepository{
+	public class NoweltyRepository : Repository<Nowelty>, INoweltyRepository{
 		public NoweltyRepository(IUnitOfWork context) : base(context)
 		{
 		}

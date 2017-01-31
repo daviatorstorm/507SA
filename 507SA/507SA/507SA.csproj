@@ -207,6 +207,7 @@
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="BootStrapper.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="DependencyInjection\DependencyResolverConfig.cs" />
     <Compile Include="DependencyInjection\IWebTypeResolver.cs" />
     <Compile Include="DependencyInjection\WebTypeResolver.cs" />
@@ -214,6 +215,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mapping.cs" />
+    <Compile Include="ModelsVM\NewsListVM.cs" />
+    <Compile Include="ModelsVM\NoweltyVM.cs" />
     <Compile Include="ModelsVM\UserListVM.cs" />
     <Compile Include="ModelsVM\UserVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -235,6 +238,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Subject.cshtml" />
+    <Content Include="Views\News\News.cshtml" />
+    <Content Include="Views\News\NewsDetail.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -266,7 +271,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49164</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49164/</IISUrl>
+          <IISUrl>http://localhost</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

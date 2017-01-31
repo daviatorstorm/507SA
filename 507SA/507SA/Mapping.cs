@@ -16,6 +16,7 @@ namespace _507SA
 			CreateMap<User, UserVM>()
 				.ForMember(d => d.Message, o => o.Ignore())
 				.ForMember(d => d.ConfirmPassword, o => o.Ignore());
+			CreateMap<Nowelty, NoweltyVM>();
 		}
 	}
 }

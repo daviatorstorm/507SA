@@ -1,0 +1,28 @@
+﻿@model _507SA.ModelsVM.NewsListVM
+@{
+    ViewBag.Title = "News";
+}
+
+<h2>News</h2>
+<div class="jumbotron">
+    @for (int i = 0; i < Model.AllNews.Count(); i++)
+    {
+        <div class="media comment">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object thumbnail" src="~/Content/Images/logo.png" height="60px" alt="">
+            </a>
+        </div>
+            <div class="media-body">
+                <h2 class="media-heading">@Model.AllNews[i].Description</h2>
+                <p>@Model.AllNews[i].Text</p>
+                @Model.AllNews[i].Date
+                <hr />
+                <a href="@Url.Action("NewsDetail", new { id = Model.AllNews[i].Id })" title="">
+                    <button class="btn btn-default">Коментарі</button>
+                </a>
+</div>
+            </div>
+    }
+            </div>
+
