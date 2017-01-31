@@ -26,6 +26,10 @@ namespace _507SA.Controllers
         {
 			return View();
         }
+		public ActionResult Register()
+		{
+			return View();
+		}
 		public ActionResult About()
 		{
 			UsersListsVM usersListsVM = new UsersListsVM();

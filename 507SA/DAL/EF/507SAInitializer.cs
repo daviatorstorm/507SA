@@ -35,6 +35,7 @@ namespace DAL.EF
 				new Nowelty(){  Description="First news", Text="So, i`m a first news!" , Date=DateTime.Now},
 				new Nowelty(){  Description="Second news", Text="So, i`m a second news!" , Date=DateTime.Now},
 				new Nowelty(){  Description="Third news", Text="So, i`m a third news!" , Date=DateTime.Now},
+				new Nowelty(){  Description="Fourth news", Text="So, i`m a fourth news!" , Date=DateTime.Now}
 			};
 			noweltiesList.ForEach(c => context.Nowelty.Add(c));
 			context.SaveChanges();

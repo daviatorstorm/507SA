@@ -2,22 +2,28 @@
 @{
     ViewBag.Title = "Index";
 }
-@Styles.Render("~/css/login")
+@Styles.Render("~/css/join")
 
-<div class="login-page">
-    <div class="form">
-        <form class="register-form">
-            <input class="form-control input-lg" type="text" placeholder="name" />
-            <input type="password" placeholder="password" />
-            <input type="text" placeholder="email address" />
-            <button>create</button>
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
-        </form>
-        <form class="login-form">
-            <input type="text" placeholder="username" />
-            <input type="password" placeholder="password" />
-            <button>login</button>
-            <p class="message">Не зареєстровані? <a href="#">Зареєструватись</a></p>
-        </form>
-    </div>
+<div class="row register">
+<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <form class="form joinus"  role="form">
+        <h2>Будь ласка, увійдіть.</h2>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <input type="text" name="email" class="form-control input-lg" placeholder="Е-мейл" tabindex="3">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <input type="email" name="зфііцщкв" class="form-control input-lg" placeholder="Пароль" tabindex="4">
+                </div>
+            </div>
+            </div>
+        <button class="btn btn-primary btn-block btn-lg">Увійти</button>
+        <hr>
+        <p class="message">Не зареєстровані? <a href="@Url.Action("Register", "Home")">Зареєструватись</a></p>
+    </form>
+</div>
 </div>
