@@ -12,6 +12,7 @@ namespace DAL.Models
 		public int Phone { get; set; }
 		public int PictureId { get; set; }
 		public string Info { get; set; }
+		public bool IsAdmin { get; set; }
 		public virtual ICollection<Comment> Comment { get; set; }
 	}
 }

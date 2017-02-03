@@ -1,4 +1,5 @@
 ﻿using _507SA.ModelsVM;
+using _507SA.Session;
 using AutoMapper;
 using DAL.Models;
 using System;
@@ -17,6 +18,8 @@ namespace _507SA
 				.ForMember(d => d.Message, o => o.Ignore())
 				.ForMember(d => d.ConfirmPassword, o => o.Ignore());
 			CreateMap<Nowelty, NoweltyVM>();
+			CreateMap<Subject, SubjectVM>();
+			CreateMap<User, UserContext>();
 		}
 	}
 }

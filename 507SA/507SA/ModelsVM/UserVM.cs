@@ -19,5 +19,6 @@ namespace _507SA.ModelsVM
 		public virtual ICollection<Comment> Comment { get; set; }
 		public string Message { get; set; }
 		public string ConfirmPassword{ get; set; }
+		public bool IsAdmin { get; set; }
 	}
 }

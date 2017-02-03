@@ -1,4 +1,4 @@
-﻿
+﻿@model  IList<_507SA.ModelsVM.SubjectVM>
 @{
     ViewBag.Title = "Subject";
 }
@@ -13,7 +13,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var b in ViewBag.Subjects)
+                @foreach (var b in Model)
                 {
                     <tr>
                         <td>@b.Name</td>

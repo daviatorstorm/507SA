@@ -16,6 +16,7 @@ namespace DAL.EF
 			Property(t => t.LastName).HasMaxLength(64);
 			Property(t => t.Info).HasMaxLength(500);
 			Property(t => t.PictureId);
+			Property(t => t.IsAdmin);
 		}
 	}
 }

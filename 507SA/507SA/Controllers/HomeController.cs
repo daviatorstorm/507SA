@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace _507SA.Controllers
 {
-	public class HomeController : Controller
+	public partial class HomeController : Controller
     {
 		// GET: Home
 		private readonly IUserRepository _userRepository;
@@ -21,11 +21,7 @@ namespace _507SA.Controllers
 		{
 			_userRepository = userRepository;
 		}
-		[HttpGet]
-		public ActionResult Index()
-        {
-			return View();
-        }
+		
 		public ActionResult Register()
 		{
 			return View();
@@ -36,12 +32,6 @@ namespace _507SA.Controllers
 			IList<User> users = _userRepository.GetAll().ToList();
 			usersListsVM.AllUsers= Mapper.Map<IList<User>, IList<UserVM>>(users);
 			return View(usersListsVM);
-		}
-		public ActionResult Subject()
-		{
-			/*IEnumerable<Subject> subjects = db.Subject;
-			ViewBag.Subjects= subjects;*/
-			return View();
 		}
 	}
 }
