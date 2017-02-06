@@ -1,7 +1,9 @@
 ﻿using _507SA.ModelsVM;
 using AutoMapper;
 using DAL.Models;
+using DAL.Repository.FileRepository;
 using DAL.Repository.NoweltyRepositoty;
+using DAL.Repository.UserRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,12 +16,14 @@ namespace _507SA.Controllers
     {
 		// GET: News
 		private readonly INoweltyRepository _noweltyRepository;
+		private readonly IUserRepository _userRepository;
 
 		public NewsController(
-			INoweltyRepository noweltyRepository
+			INoweltyRepository noweltyRepository, IUserRepository userRepository
 		)
 		{
 			_noweltyRepository = noweltyRepository;
+			_userRepository = userRepository;
 		}
 		public ActionResult News()
         {
@@ -34,6 +38,17 @@ namespace _507SA.Controllers
 			NoweltyVM newsVM = new NoweltyVM();
 			newsVM= Mapper.Map<Nowelty, NoweltyVM>(news);
 			return View(newsVM);
+		}
+		[HttpPost]
+		public ActionResult NewsDetail(NoweltyVM noweltyVM)
+		{
+			int id2 = _userRepository.GetByEmail("panchuk@gmail.com").Id;
+			int id=_userRepository.GetByEmail(User.Identity.Name.ToString()).Id;
+			Nowelty nowelty = _noweltyRepository.Get(noweltyVM.Id);
+			nowelty.Comment.Add(new Comment() { Text = noweltyVM.CommentText, NoweltyId = noweltyVM.Id, UserId = id ,DateOfComment=DateTime.Now});
+			_noweltyRepository.UnitOfWork.SaveChanges();
+			noweltyVM.Text = "";
+			return RedirectToAction( "NewsDetail",noweltyVM);
 		}
 	}
 }

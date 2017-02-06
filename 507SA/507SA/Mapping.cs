@@ -16,8 +16,12 @@ namespace _507SA
 		{
 			CreateMap<User, UserVM>()
 				.ForMember(d => d.Message, o => o.Ignore())
-				.ForMember(d => d.ConfirmPassword, o => o.Ignore());
-			CreateMap<Nowelty, NoweltyVM>();
+				.ForMember(d => d.ConfirmPassword, o => o.Ignore())
+				.ForMember(d => d.NewPassword, o => o.Ignore())
+				.ForMember(d => d.ConfirmNewPassword, o => o.Ignore())
+				.ForMember(d => d.IsAdmin, o => o.Ignore());
+			CreateMap<Nowelty, NoweltyVM>()
+				.ForMember(d => d.CommentText, o => o.Ignore());
 			CreateMap<Subject, SubjectVM>();
 			CreateMap<User, UserContext>();
 		}

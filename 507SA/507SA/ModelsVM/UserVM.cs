@@ -20,5 +20,7 @@ namespace _507SA.ModelsVM
 		public string Message { get; set; }
 		public string ConfirmPassword{ get; set; }
 		public bool IsAdmin { get; set; }
+		public string NewPassword { get; set; }
+		public string ConfirmNewPassword { get; set; }
 	}
 }

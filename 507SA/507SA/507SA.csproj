@@ -285,6 +285,7 @@
     <Content Include="Views\News\News.cshtml" />
     <Content Include="Views\News\NewsDetail.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\ChangeProfile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

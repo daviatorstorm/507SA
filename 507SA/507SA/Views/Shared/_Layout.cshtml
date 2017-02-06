@@ -37,12 +37,15 @@
                         <li>
                             <a href="#">Розклад</a>
                         </li>
+                @if (User.IsInRole("User"))
+                    {
                         <li>
-                              <a href="#" title="Change Profile"><span class="glyphicon glyphicon-user"></span></a>
+                              <a href="@Url.Action("ChangeProfile", "Home") "title="Change Profile"><span class="glyphicon glyphicon-user"></span></a>
                           </li>
                            <li>
                                <a href="@Url.Action("Logout", "Home")" title="Log Out"><span class="glyphicon glyphicon-log-out"></span></a>
                            </li>
+                     }
                     </ul>
                 </div>
             </nav>

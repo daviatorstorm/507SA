@@ -10,6 +10,6 @@ namespace DAL.Models
 		public string Description { get; set; }
 		public int UserId { get; set; }
 		public DateTime Date { get; set; }
-		public virtual ICollection<Comment> Comment { get; set; }
+		public virtual IList<Comment> Comment { get; set; }
 	}
 }

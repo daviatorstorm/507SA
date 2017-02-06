@@ -13,6 +13,7 @@ namespace _507SA.ModelsVM
 		public string Text { get; set; }
 		public string Description { get; set; }
 		public int UserId { get; set; }
-		public virtual ICollection<Comment> Comment { get; set; }
+		public string CommentText { get; set; }
+		public virtual IList<Comment> Comment { get; set; }
 	}
 }
