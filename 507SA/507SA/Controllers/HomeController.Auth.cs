@@ -7,6 +7,7 @@ using Microsoft.Owin.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Web;
 using System.Web.Mvc;
@@ -52,6 +53,48 @@ namespace _507SA.Controllers
 		{
 			HttpContext.GetOwinContext().Authentication.SignOut();
 			return RedirectToAction("Index");
+		}
+		[HttpPost]
+		public ActionResult Register(UserVM userVM)
+		{
+			if (ValidateRegisterData(userVM))
+			{
+				User user = new User();
+				user.FirstName = userVM.FirstName;
+				user.LastName = userVM.LastName;
+				user.Password = userVM.Password;
+				user.Phone = userVM.Phone;
+				user.Email = userVM.Email;
+				_userRepository.Add(user);
+				_userRepository.UnitOfWork.SaveChanges();
+				return RedirectToAction("Index");
+			}
+			else
+			{
+				return View();
+			}
+
+		}
+		private bool ValidateRegisterData(UserVM userVM)
+		{
+			bool isValid = true;
+
+			try
+			{
+				MailAddress email = new MailAddress(userVM.Email);
+			}
+			catch (Exception)
+			{
+				isValid = false;
+			}
+
+			if (string.IsNullOrWhiteSpace(userVM.Password)
+				|| string.IsNullOrWhiteSpace(userVM.ConfirmPassword)
+				|| userVM.Password != userVM.ConfirmPassword)
+			{
+				isValid = false;
+			}
+			return isValid;
 		}
 	}
 }
