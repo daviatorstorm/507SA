@@ -12,6 +12,5 @@ namespace DAL.Models
 		public virtual User User { get; set; }
 		public virtual Nowelty Nowelty { get; set; }
 		public DateTime DateOfComment { get; set; }
-
 	}
 }

@@ -42,13 +42,19 @@ namespace _507SA.Controllers
 		[HttpPost]
 		public ActionResult NewsDetail(NoweltyVM noweltyVM)
 		{
-			int id2 = _userRepository.GetByEmail("panchuk@gmail.com").Id;
-			int id=_userRepository.GetByEmail(User.Identity.Name.ToString()).Id;
 			Nowelty nowelty = _noweltyRepository.Get(noweltyVM.Id);
-			nowelty.Comment.Add(new Comment() { Text = noweltyVM.CommentText, NoweltyId = noweltyVM.Id, UserId = id ,DateOfComment=DateTime.Now});
+			User user = _userRepository.GetByEmail(User.Identity.Name);
+			nowelty.Comment.Add(new Comment() { Text = noweltyVM.CommentText, NoweltyId = noweltyVM.Id, UserId = user.Id, DateOfComment=DateTime.Now});
 			_noweltyRepository.UnitOfWork.SaveChanges();
-			noweltyVM.Text = "";
-			return RedirectToAction( "NewsDetail",noweltyVM);
+			Nowelty newNowelty= _noweltyRepository.Get(noweltyVM.Id);
+			NoweltyVM newNoweltyVM = Mapper.Map<Nowelty, NoweltyVM>(nowelty);
+
+			/*if(newNoweltyVM.Comment[newNoweltyVM.Comment.Count-1].User== null)
+			{
+				newNoweltyVM.Comment[newNoweltyVM.Comment.Count - 1].User = user;
+			} */
+
+			return RedirectToAction( "NewsDetail",newNoweltyVM);
 		}
 	}
 }
