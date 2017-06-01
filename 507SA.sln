@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "507SA", "507SA\507SA.csproj", "{CC4C15C5-2635-4FC5-A56F-F2AC73BA0ACA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WEB", "WEB", "{F955CC97-1F90-4273-B34A-1C79C025276C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.DAL", "1.DAL", "{E139E52E-0CC3-4027-B59F-A4C2AD6BC3C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{D45C0E7A-B393-4DE1-A8D4-65090B3D774D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B48692A-5690-4170-AF8F-A1D8A5637ED1}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC4C15C5-2635-4FC5-A56F-F2AC73BA0ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4C15C5-2635-4FC5-A56F-F2AC73BA0ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4C15C5-2635-4FC5-A56F-F2AC73BA0ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4C15C5-2635-4FC5-A56F-F2AC73BA0ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45C0E7A-B393-4DE1-A8D4-65090B3D774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45C0E7A-B393-4DE1-A8D4-65090B3D774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45C0E7A-B393-4DE1-A8D4-65090B3D774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45C0E7A-B393-4DE1-A8D4-65090B3D774D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC4C15C5-2635-4FC5-A56F-F2AC73BA0ACA} = {F955CC97-1F90-4273-B34A-1C79C025276C}
+		{D45C0E7A-B393-4DE1-A8D4-65090B3D774D} = {E139E52E-0CC3-4027-B59F-A4C2AD6BC3C6}
+	EndGlobalSection
+EndGlobal
